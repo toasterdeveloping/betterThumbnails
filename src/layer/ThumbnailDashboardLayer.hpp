@@ -12,6 +12,9 @@ struct UserStats {
     int activeThumbnailCount = 0;
     int pendingUploadCount = 0;
     std::string username = "unknown";
+    int energyLeft = 0;
+    std::string energyRefillTime;
+    std::string username = "unknown";
 };
 
 struct GlobalStats {
@@ -65,6 +68,11 @@ private:
     CCNode* m_acceptanceUploadsNode = nullptr;
     CCCounterLabel* m_acceptanceUploadsLabel = nullptr;
     CCLabelBMFont* m_acceptanceUploadsTitle = nullptr;
+
+    // thumbnail energy
+    CCNode* m_energyNode = nullptr;
+    CCLabelBMFont* m_energyLabel = nullptr;
+    CCLabelBMFont* m_energyTitle = nullptr;
 
     // unique levels
     CCNode* m_uniqueLevelsNode = nullptr;
