@@ -52,7 +52,7 @@ bool ThumbnailDashboardLayer::init() {
     m_acceptanceStatsNode = CCNode::create();
     m_acceptanceStatsNode->setAnchorPoint({0.5f, 0.5f});
     m_acceptanceStatsNode->setContentSize({140.f, 60.f});
-    m_acceptanceStatsNode->setPosition({screenSize.width / 2.f - 100.f, screenSize.height - 80.f});
+    m_acceptanceStatsNode->setPosition({screenSize.width / 2.f - 150.f, screenSize.height - 80.f});
     this->addChild(m_acceptanceStatsNode);
 
     auto acceptanceStatsBg = NineSlice::create("square02_001.png");
@@ -75,7 +75,7 @@ bool ThumbnailDashboardLayer::init() {
     m_activeThumbnailsNode = CCNode::create();
     m_activeThumbnailsNode->setContentSize({140.f, 60.f});
     m_activeThumbnailsNode->setAnchorPoint({0.5f, 0.5f});
-    m_activeThumbnailsNode->setPosition({screenSize.width / 2.f + 100.f, screenSize.height - 80.f});
+    m_activeThumbnailsNode->setPosition({screenSize.width / 2.f + 150.f, screenSize.height - 80.f});
     this->addChild(m_activeThumbnailsNode);
 
     auto activeThumbnailsBg = NineSlice::create("square02_001.png");
@@ -534,9 +534,9 @@ void ThumbnailDashboardLayer::updateUI() {
         m_acceptanceStatsNode->setVisible(true);
         m_progressBar->setVisible(true);
         m_energyNode->setVisible(true);
-        m_activeThumbnailsNode->setPosition({screenSize.width / 2.f + 100.f, screenSize.height - 80.f});
+        m_activeThumbnailsNode->setPosition({screenSize.width / 2.f + 150.f, screenSize.height - 80.f});
         m_uploadStatsNode->setPosition({screenSize.width / 2.f - 150.f, screenSize.height - 180.f});
-        m_energyNode->setPosition({screenSize.width / 2.f, screenSize.height - 80.f})
+        m_energyNode->setPosition({screenSize.width / 2.f, screenSize.height - 80.f});
         m_acceptanceUploadsNode->setPosition({screenSize.width / 2.f, screenSize.height - 180.f});
         m_uniqueLevelsNode->setPosition({screenSize.width / 2.f + 150.f, screenSize.height - 180.f});
         m_rejectedUploadsNode->setPosition({screenSize.width / 2.f - 150.f, screenSize.height - 250.f});
