@@ -8,7 +8,7 @@ Interact with the <cf>Level Thumbnails</c> server directly in-game!
 
 ## Requirements
 
-##### <cr>Level Thumbnails Mod is required to use this add-on!</c>
+##### <cr>[Level Thumbnails](https://geode-sdk.org/mods/cdc.level_thumbnails) Mod is required to use this add-on!</c>
 
 <mod:cdc.level_thumbnails>
 
