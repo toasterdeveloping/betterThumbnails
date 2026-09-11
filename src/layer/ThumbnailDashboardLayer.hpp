@@ -11,10 +11,9 @@ struct UserStats {
     int levelCount = 0;
     int activeThumbnailCount = 0;
     int pendingUploadCount = 0;
-    std::string username = "unknown";
+    std::string username = "unknown"; // the thing was there was two usernames so i had to fix this by deleting only one
     int energyLeft = 0;
     std::string energyRefillTime;
-    std::string username = "unknown";
 };
 
 struct GlobalStats {
